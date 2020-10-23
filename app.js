@@ -4,8 +4,8 @@ const startGame = document.querySelector('.btn__reset');
 const overlay = document.querySelector("#overlay")
 
 const phrases = [
-    'extra',
-    'big yikes',
+    'dime a dozen',
+    'yikes',
     'yolo',
     'messing around',
     'down to earth'
@@ -23,7 +23,6 @@ function getRandomPhraseAsArray(arr){
     const randomPhrase = arr[randomNumber];
     return randomPhrase.split("");
 }
-
 
 //Sets Game display
 
@@ -59,9 +58,6 @@ function checkLetter(btn) {
     }
     return letterMatch;
 }
-
-
-
 
 
 qwerty.addEventListener('click', (event) => {
